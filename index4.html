@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  margin: 0px 5px 0px 5px;
+  background-color: white;
+  padding: 30px;
+  text-align: left;
+  color: red;
+  border-style: solid;
+  border-top-width: 3px;
+  border-color:white;
+  border-top-color:red;
+  
+}
+
+.header {
+  margin: 0px 5px 0px 5px;
+  border-style: solid;
+  border-top-width: 3px;
+  border-top-color: red;
+  border-left-color: white;
+  border-right-color: white;
+  border-bottom-color: red;
+  padding: 10px 16px;
+  background-color: white;
+  color: red;
+  text-align: left;
+}
+
+
+    
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+    
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+    
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }*/
+}
+    
+</style>
+</head>
+<body>
+
+<div class="top-container">
+  <h1>Click on an image to read something I wrote</h1>
+    <p><b>Pictures of Bandersnatch and Pancake are Dealer's choice posts</b></p>
+</div>
+
+<div class="header" id="myHeader">
+  <h2><b>Detroit Idea Factory + other fun things</b></h2>
+</div>
+
+<div style="overflow:auto">
+    
+<body>
+
+<!-- Header -->
+
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+    <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+  </div>
+  <div class="column">
+    <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+  </div>  
+  <div class="column">
+    <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+  </div>
+  <div class="column">
+    <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+      <a href="https://imgur.com/fvcttgj"><img src="https://i.imgur.com/fvcttgj.jpg?1" title="source: imgur.com" /></a>
+  </div>
+</div>
+
+</body>
+
+    
+
+
+    
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
